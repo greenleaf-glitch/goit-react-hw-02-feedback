@@ -31,7 +31,6 @@ class Feedback extends Component {
       (this.state.good / this.countTotalFeedback()) *
       100
     ).toFixed(2);
-    console.log(posPercent);
     if (!isNaN(posPercent)) return `${posPercent}%`;
   };
 
