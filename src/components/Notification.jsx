@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 class Notification extends Component {
   render() {
-    const { message } = this.props;
-    return <h3>{message}</h3>;
+    return (
+      <h3 style={{ fontSize: '25px', color: 'red' }}>{this.props.message}</h3>
+    );
   }
 }
 

@@ -1,26 +1,16 @@
 import React, { Component } from 'react';
 
 class FeedbackOptions extends Component {
-  handleGood = () => {
-    this.setState(prevState => ({ good: prevState.good + 1 }));
-  };
-  handleNeutral = () => {
-    this.setState(prevState => ({ neutral: prevState.neutral + 1 }));
-  };
-  handleBad = () => {
-    this.setState(prevState => ({ bad: prevState.bad + 1 }));
-  };
-
   render() {
     return (
       <div>
-        <button type="button" onClick={this.handleGood}>
+        <button type="button" onClick={this.props.options.handleGood}>
           Good
         </button>
-        <button type="button" onClick={this.handleNeutral}>
+        <button type="button" onClick={this.props.options.handleNeutral}>
           Neutral
         </button>
-        <button type="button" onClick={this.handleBad}>
+        <button type="button" onClick={this.props.options.handleBad}>
           Bad
         </button>
       </div>
