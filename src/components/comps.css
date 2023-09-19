@@ -20,6 +20,12 @@ button {
   margin-right: 30px;
 }
 
+button:hover,
+button:focus {
+  color: white;
+  background-color: blue;
+}
+
 p {
   font-size: 20px;
 }
